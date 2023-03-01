@@ -139,13 +139,12 @@ button {
 
 .contact-link {
     color: var(--slate-color);
-    transition: color var(--hover-transition);
+    transition: color var(--timing-function);
 }
 
 /*---------------Header-----------------*/
 .page-header {
-    padding-top: 24px;
-    padding-bottom: 23px;
+    padding:16px 24px;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -204,7 +203,7 @@ button {
 .nav-link:not(.nav-link-active):hover::after,
 .nav-link:not(.nav-link-active):focus::after {
     background-color: var(--ocean-color);
-    transition: background-color var(--hover-transition);
+    transition: background-color var(--timing-function);
 }
 
 @media screen and (max-width: 767px) {
@@ -238,7 +237,7 @@ button {
         gap: 40px;
     }
 
-    .contact-link {
+    .contact-item {
         font-size: 12px;
     }
 }
@@ -248,12 +247,12 @@ button {
         padding-bottom: 23px;
     }
 
-    .contact-list {
+    .contact-link {
         display: flex;
         gap: 40px;
     }
 
-    .contact-link {
+    .contact-item {
         font-size: 16px;
     }
 }
