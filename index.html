@@ -17,7 +17,7 @@
 
 <body>
     <header class="page-header">
-        <div class="container navigation">
+        <div class="container header-container">
             <!--Menu Nav-->
             <nav class="menu">
                 <!--Header Logo-->
@@ -50,6 +50,73 @@
                     </li>
                 </ul>
             </address>
+
+            <button type="button" class="menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="mobile-menu-btn-icon" width="32" height="22">
+                    <use href="./images/iconos.svg#icon-menu-button"></use>
+                </svg>
+            </button>
+            <!-- Menu Button -->
+        </div>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="close-modal-btn js-close-menu" type="button">
+                <svg class="close-modal-btn-icon" width="8" height="8">
+                    <use href="./images/iconos.svg#icon-close-modal"></use>
+                </svg>
+            </button>
+
+            <ul class="menu-list">
+                <li class="memu-item">
+                    <a href="./index.html" class="link menu-link current-menu-link">Studio</a>
+                </li>
+                <li class="memu-item">
+                    <a href="./portfolio.html" class="link menu-link">Portfolio</a>
+                </li>
+                <li class="memu-item">
+                    <a href="#" class="link menu-link">Contacts</a>
+                </li>
+            </ul>
+
+            <ul class="menu-address-list">
+                <li class="menu-address-item">
+                    <a class="link contact-link phone-number" href="tel:110001111111">+11 (000) 111-11-11</a>
+                </li>
+                <li class="menu-address-item">
+                    <a class="link contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+
+            <ul class="menu-social-list">
+                <li class="menu-social-item">
+                    <a href="#" class="menu-social-link">
+                        <svg class="social-icon" width="24" height="24">
+                            <use href="./images/iconos.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu-social-item">
+                    <a href="#" class="menu-social-link">
+                        <svg class="social-icon" width="24" height="24">
+                            <use href="./images/iconos.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu-social-item">
+                    <a href="#" class="menu-social-link">
+                        <svg class="social-icon" width="24" height="24">
+                            <use href="./images/iconos.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu-social-item">
+                    <a href="#" class="menu-social-link">
+                        <svg class="social-icon" width="24" height="24">
+                            <use href="./images/iconos.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
 
@@ -78,8 +145,8 @@
                                 <use href="./images/iconos.svg#icon-antenna"></use>
                             </svg>
                         </div>
-                        <h3 class="card-title">Strategy</h3>
-                        <p class="card-descript">
+                        <h3 class="features-card-title">Strategy</h3>
+                        <p class="features-card-text">
                             Our goal is to identify the business problem to walk away with
                             the perfect and creative solution.
                         </p>
@@ -91,8 +158,8 @@
                                 </use>
                             </svg>
                         </div>
-                        <h3 class="card-title">Punctuality</h3>
-                        <p class="card-descript">
+                        <h3 class="features-card-title">Punctuality</h3>
+                        <p class="features-card-text">
                             Bring the key message to the brand's audience for the best price
                             within the shortest possible time.
                         </p>
@@ -104,8 +171,8 @@
                                 </use>
                             </svg>
                         </div>
-                        <h3 class="card-title">Diligence</h3>
-                        <p class="card-descript">
+                        <h3 class="features-card-title">Diligence</h3>
+                        <p class="features-card-text">
                             Research and confirm brands that present the strongest digital
                             growth opportunities and minimize risk.
                         </p>
@@ -117,8 +184,8 @@
                                 </use>
                             </svg>
                         </div>
-                        <h3 class="card-title">Technologies</h3>
-                        <p class="card-descript">
+                        <h3 class="features-card-title">Technologies</h3>
+                        <p class="features-card-text">
                             Design practice focused on digital experiences. We bring forth a
                             deep passion for problem-solving.
                         </p>
@@ -481,7 +548,11 @@
             </form>
         </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/modal.js"></script>
 </body>
 
 </html>
