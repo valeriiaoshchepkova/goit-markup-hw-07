@@ -1,3 +1,3 @@
-HTML + CSS Модуль 5
+HTML + CSS Модуль 7
 
-WebStudio (https://valeriiaoshchepkova.github.io/goit-markup-hw-07/)
+<a href="https://valeriiaoshchepkova.github.io/goit-markup-hw-07/"></a>
