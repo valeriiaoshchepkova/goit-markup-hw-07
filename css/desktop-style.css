@@ -24,7 +24,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .header {
+    .page-header {
         padding-bottom: 23px;
     }
     .contact-link {
